@@ -27,6 +27,9 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import Signup from "./pages/Auth/Signup";
+import Login from "./pages/Auth/Login";
+import Forgot from "./pages/Auth/Forgot";
 
 const App = () => (
 	<IonApp>
@@ -43,6 +46,10 @@ const App = () => (
             <Route path="/submit" component={Submit}/>
             <Route path="/search" component={Search}/>
             <Route path="/profile" component={Profile}/>
+            {/* <Route path="/edit-profile" component={EditProfile}/> */}
+            <Route path="/register" component={Signup}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/forgot" component={Forgot}/>
             <Route component={()=> <Redirect to="/news"/>} />
 					{/* <Route path="/home" component={Home} exact={true} />
 					<Route exact path="/" render={() => <Redirect to="/home" />} /> */}
